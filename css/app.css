@@ -1,0 +1,42 @@
+li{
+    list-style: none;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(#861c01, #3c67e3 43%,#ff0000);
+    animation:  borerlight 5s linear infinite;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #ffffff;
+}
+
+@keyframes borerlight {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-header{
+    z-index: 3;
+}
+
+.card-body{
+    z-index: 3;
+}
+.list-group{
+    z-index: 3;
+}
+
+.btn{
+    z-index: 4;
+}
